@@ -1,0 +1,155 @@
+.maincomponent
+{
+    background-color: beige;
+    text-align: center;
+    color: black;
+}
+.boxcls
+{
+    background-color: white;
+    border: 2px solid white;
+}
+.box
+{
+    width: 150px;
+    height: 150px;
+    font-size: 3em;
+}
+#box1
+{
+    background-color: darkolivegreen;
+    transition: width 2s, height 2s;
+}
+#box2
+{
+    background-color: olive;
+    transition: width 2s, height 2s;
+}
+#box3
+{
+    background-color: rgb(172, 172, 38);
+    transition: width 2s, height 2s;
+}
+#box4
+{
+    background-color: rgb(233, 233, 75);
+    transition: width 2s, height 2s;
+}
+#box1:hover
+{
+    background-color: darkolivegreen;
+    width: 500px;
+    height: 250px;
+}
+#box2:hover
+{
+    background-color: olive;
+    width: 500px;
+    height: 250px;
+}
+#box3:hover
+{
+    background-color: rgb(172, 172, 38);
+    width: 500px;
+    height: 250px;
+}
+#box4:hover
+{
+    background-color: rgb(233, 233, 75);
+    width: 500px;
+    height: 250px;
+}
+.newboxs
+{
+    border: 2px solid red;
+}
+.newbox
+{
+     width: 150px;
+    height: 150px;
+    font-size: 12px;
+    border-radius: 16px;
+    background-color: blueviolet;
+    transition: width 2s;
+}
+#b1
+{
+    background-color: deepskyblue;
+    transition-timing-function: linear;
+}
+#b1:hover
+{
+    background-color: hotpink;
+    width: 300px;
+}
+#b2
+{
+    background-color: maroon;
+    transition-timing-function: linear;
+}
+#b2:hover
+{
+    background-color: dodgerblue;
+    width: 300px;
+}
+#b3
+{
+    background-color: darkorange;
+    transition-timing-function: linear;
+}
+#b3:hover
+{
+    background-color: orangered;
+    width: 300px;
+}
+#b4
+{
+    background-color: silver;
+    transition-timing-function: linear;
+}
+#b4:hover
+{
+    background-color: sienna;
+    width: 300px;
+}
+.newrotate
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: orchid;
+    transition: width 2s, height 2s, transform 2s;
+}
+.newrotate:hover
+{
+    width: 400px;
+    height: 400px;
+    background-color: darkslategray;
+    transform: rotate(180deg);
+}
+.scrolltext
+{
+    font-family: 'Lucida Grande' ;
+    font-style: oblique;
+    font-size: 30px;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid red;
+    white-space: nowrap;
+}
+.scrolltext span
+{
+    display: inline-block;
+    padding-left: 100%;
+    animation-name: scroll-right-left;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll-right-left
+{
+    from{transform:translateX(100%);}
+      to{transform:translateX(-100%);}
+}
